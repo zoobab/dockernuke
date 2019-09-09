@@ -19,6 +19,12 @@ Notably ```docker prune``` does not remove everything (only what is considered
 * sudo
 * systemctl
 
+# Notes
+
+If ```/var/lib/docker``` is on the same disk as ```/var/lib/docker.old``` (or
+you don't have a dedicated disk partition for /var/lib/docker), the move
+operation with 'mv' should be near instant.
+
 # Screenshot
 
 ```
@@ -27,6 +33,7 @@ $ ./dockernuke.sh
 [2/4] Moving directory...[OK]
 [3/4] Erasing old directory...[OK]
 [4/4] Starting Docker...[OK]
+$ 
 ```
 
 # Issues

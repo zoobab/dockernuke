@@ -2,7 +2,12 @@
 
 This is a quick shell script to destroy `/var/lib/docker` and restart Docker with no images whatsoever.
 
+# Why?
+
 I wrote it because all other approaches sucks, are not fast enough, left garbage layers, etc...
+
+Notably ```docker prune``` does not remove everything (only what is considered
+'dangling'), so I could not find any other option then nuking the whole docker directory.
 
 # Requirements
 

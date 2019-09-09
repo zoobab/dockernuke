@@ -39,8 +39,6 @@ echo -ne "[3/$NSTEPS] Erasing old directory..."
 sudo rm -Rf ${olddir} &
 echo -ne "[OK]\n"
 
-sleep 10
-
 echo -ne "[4/$NSTEPS] Starting Docker..."
 sudo systemctl start docker
 echo -ne "[OK]\n"

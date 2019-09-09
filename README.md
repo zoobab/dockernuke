@@ -22,7 +22,7 @@ Notably ```docker prune``` does not remove everything (only what is considered
 # Notes
 
 If ```/var/lib/docker``` is on the same disk as ```/var/lib/docker.old``` (or
-you don't have a dedicated disk partition for /var/lib/docker), the move
+you don't have a dedicated disk partition for ```/var/lib/docker```), the move
 operation with 'mv' should be near instant.
 
 # Screenshot
